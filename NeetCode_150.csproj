@@ -11,7 +11,6 @@
     <Folder Include="1D Dynamic Programming\" />
     <Folder Include="2D Dynamic Programming\" />
     <Folder Include="Advanced Graphs\" />
-    <Folder Include="Arrays &amp; Hashing\" />
     <Folder Include="Backtracking\" />
     <Folder Include="Binary Search\" />
     <Folder Include="Bit Manipulation\" />
