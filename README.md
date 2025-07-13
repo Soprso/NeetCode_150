@@ -64,8 +64,6 @@ To run a specific problem:
 📚 Source
 Challenge: NeetCode 150
 
-LeetCode Profile: https://leetcode.com/ (Optional: Add yours if public)
-
 🧑‍💻 Author
 Soumyadeep Ghosh
 🔗 GitHub Profile
