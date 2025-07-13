@@ -19,7 +19,19 @@ class Program
         System.Console.WriteLine();
         foreach (int i in arr)
         {
-            System.Console.Write(i+" ");
+            System.Console.Write(i + " ");
+        }
+
+        GroupAnagrams ga = new GroupAnagrams();
+        var list = ga.groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+        foreach (var x in list)
+        {
+            System.Console.Write("[");
+            foreach (string y in x)
+            {
+                System.Console.Write($"{y} ,");
+            }
+            System.Console.Write("]");
         }
     }
 }
