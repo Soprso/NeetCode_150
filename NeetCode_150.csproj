@@ -24,7 +24,6 @@
     <Folder Include="Stack\" />
     <Folder Include="Trees\" />
     <Folder Include="Tries\" />
-    <Folder Include="Two Pointers\" />
   </ItemGroup>
 
 </Project>
