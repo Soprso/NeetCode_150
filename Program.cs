@@ -33,5 +33,14 @@ class Program
             }
             System.Console.Write("]");
         }
+
+        TopKFrequentElements tk = new TopKFrequentElements();
+        int[] res = tk.TopFreq([1, 1, 1, 3, 2, 2, 4], 2);
+        System.Console.WriteLine();
+        System.Console.WriteLine($"top 2 frequent elements are:");
+        foreach (int i in res)
+        {
+            System.Console.Write(i+" ");
+        }
     }
 }
