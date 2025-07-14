@@ -115,6 +115,12 @@ class Program
         System.Console.WriteLine(
             "Container with Most Water Beats 100% in Runtime"
         );
-        System.Console.WriteLine(cwm.MaxArea([1,8,6,2,5,4,8,3,7]));
+        System.Console.WriteLine(cwm.MaxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]));
+
+        TrappingRainWater trw = new TrappingRainWater();
+        System.Console.WriteLine();
+        System.Console.WriteLine("Total Rain water that ca be trapped");
+        int totalRainWater = trw.Trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]);
+        System.Console.WriteLine(totalRainWater);
     }
 }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NeetCode_150")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fda3df4d528eba3c5cdafbc011b0341fd3549dac")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+261728280f012bf4e86d47db6caa3828ab6a402e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NeetCode_150")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NeetCode_150")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
