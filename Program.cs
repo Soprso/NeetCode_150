@@ -1,4 +1,5 @@
-﻿using NeetCode_150.Arrays___Hashing;
+﻿using System.Runtime.InteropServices;
+using NeetCode_150.Arrays___Hashing;
 
 class Program
 {
@@ -59,7 +60,26 @@ class Program
         System.Console.WriteLine("Product Array");
         foreach (int i in respae)
         {
-            System.Console.Write(i+" ");
+            System.Console.Write(i + " ");
         }
+
+        ValidSudoku vs = new ValidSudoku();
+        char[][] board = new char[][]
+        {
+            new char[] {'5','3','.','.','7','.','.','.','.'},
+            new char[] {'6','.','.','1','9','5','.','.','.'},
+            new char[] {'.','9','8','.','.','.','.','6','.'},
+            new char[] {'8','.','.','.','6','.','.','.','3'},
+            new char[] {'4','.','.','8','.','3','.','.','1'},
+            new char[] {'7','.','.','.','2','.','.','.','6'},
+            new char[] {'.','6','.','.','.','.','2','8','.'},
+            new char[] {'.','.','.','4','1','9','.','.','5'},
+            new char[] {'.','.','.','.','8','.','.','7','9'}
+        };
+        Console.WriteLine(vs.IsValidSudoku(board));
+
+        LongestConsecutiveSequence lcs = new LongestConsecutiveSequence();
+        System.Console.WriteLine("Longest Consecutive Subsequence is: ");
+        System.Console.WriteLine(lcs.LongestConsecutive([100, 4, 200, 1, 3, 2])); 
     }
 }
