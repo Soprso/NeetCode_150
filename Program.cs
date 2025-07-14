@@ -86,5 +86,28 @@ class Program
         ValidPalindrome vp = new ValidPalindrome();
         System.Console.WriteLine("Is the string Palindrome: ");
         System.Console.WriteLine(vp.IsPalindrome("madam"));
+
+        TwoSum2 ts2 = new TwoSum2();
+        var rests2 = ts2.TwoSum([2, 7, 11, 15], 9);
+        System.Console.WriteLine();
+        System.Console.WriteLine("Indices are: ");
+        foreach (int i in rests2)
+        {
+            System.Console.Write(i + " ");
+        }
+
+        ThreeSumProblem th = new ThreeSumProblem();
+        var threesum = th.ThreeSum([-1, 0, 1, 2, -1, -4]);
+        System.Console.WriteLine();
+        System.Console.WriteLine("Output");
+        foreach (var x in threesum)
+        {
+            System.Console.Write("[");
+            foreach (int i in x)
+            {
+                System.Console.Write(i + " ");
+            }
+            System.Console.Write("], ");
+        }
     }
 }
