@@ -109,5 +109,12 @@ class Program
             }
             System.Console.Write("], ");
         }
+
+        ContainerWithMostWater cwm = new ContainerWithMostWater();
+        System.Console.WriteLine();
+        System.Console.WriteLine(
+            "Container with Most Water Beats 100% in Runtime"
+        );
+        System.Console.WriteLine(cwm.MaxArea([1,8,6,2,5,4,8,3,7]));
     }
 }
