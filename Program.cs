@@ -40,6 +40,25 @@ class Program
         System.Console.WriteLine($"top 2 frequent elements are:");
         foreach (int i in res)
         {
+            System.Console.Write(i + " ");
+        }
+
+        EncodingandDecoding ed = new EncodingandDecoding();
+        var res1 = ed.Encode(["neet", "code", "love", "you"]);
+        var res2 = ed.Decode(res1);
+        System.Console.WriteLine();
+        System.Console.WriteLine("Decoded String");
+        foreach (var x in res2)
+        {
+            System.Console.WriteLine(x + " ");
+        }
+
+        ProductOfArrayExceptSelf pae = new ProductOfArrayExceptSelf();
+        int[] respae = pae.ProductExceptSelf([1, 2, 3, 4]);
+        System.Console.WriteLine();
+        System.Console.WriteLine("Product Array");
+        foreach (int i in respae)
+        {
             System.Console.Write(i+" ");
         }
     }
