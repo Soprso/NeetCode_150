@@ -127,6 +127,10 @@ class Program
         BestTimeToBuySellStock btbs = new BestTimeToBuySellStock();
         System.Console.WriteLine();
         System.Console.WriteLine("Most Profit is");
-        System.Console.WriteLine(btbs.MaxProfit([7,6,4,3,1]));
+        System.Console.WriteLine(btbs.MaxProfit([7, 6, 4, 3, 1]));
+
+        LongestSubstringWithoutRepeating lswr = new LongestSubstringWithoutRepeating();
+        System.Console.WriteLine();
+        System.Console.WriteLine($"The length of Longest Substring without repeating is: {lswr.LengthOfLongestSubstring("abcabcbb")}");
     }
 }
