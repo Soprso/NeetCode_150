@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using NeetCode_150.Arrays___Hashing;
+using NeetCode_150.Sliding_Window;
 using NeetCode_150.Two_Pointers;
 
 class Program
@@ -122,5 +123,10 @@ class Program
         System.Console.WriteLine("Total Rain water that ca be trapped");
         int totalRainWater = trw.Trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]);
         System.Console.WriteLine(totalRainWater);
+
+        BestTimeToBuySellStock btbs = new BestTimeToBuySellStock();
+        System.Console.WriteLine();
+        System.Console.WriteLine("Most Profit is");
+        System.Console.WriteLine(btbs.MaxProfit([7,6,4,3,1]));
     }
 }

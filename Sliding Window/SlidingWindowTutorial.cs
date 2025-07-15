@@ -59,23 +59,28 @@ public class SlidingWindowTutorial
         }
         return maxSum;
     }
+
+
+    //the above is an example of a fixed sliding window.
+
+    // | Variant                   | When to Use                                                          |
+    // | ------------------------- | -------------------------------------------------------------------- |
+    // | Fixed-size window         | When you’re looking for things like **max sum of size `k`**          |
+    // | Dynamic-size window       | When the window **expands and shrinks**, like for substrings         |
+    // | Two-pointer (start & end) | For problems like **Longest Substring Without Repeating Characters** |
+
+    // 🧠 Common Problems Using Sliding Window:
+    // ✅ Maximum Subarray of Size k
+
+    // ✅ Longest Substring Without Repeating Characters
+
+    // ✅ Minimum Size Subarray Sum
+
+    // ✅ Permutation in String
+
+    // ✅ Max Consecutive Ones
+
+    // ✅ Fruits Into Baskets
+
+
 }
-
-// | Variant                   | When to Use                                                          |
-// | ------------------------- | -------------------------------------------------------------------- |
-// | Fixed-size window         | When you’re looking for things like **max sum of size `k`**          |
-// | Dynamic-size window       | When the window **expands and shrinks**, like for substrings         |
-// | Two-pointer (start & end) | For problems like **Longest Substring Without Repeating Characters** |
-
-// 🧠 Common Problems Using Sliding Window:
-// ✅ Maximum Subarray of Size k
-
-// ✅ Longest Substring Without Repeating Characters
-
-// ✅ Minimum Size Subarray Sum
-
-// ✅ Permutation in String
-
-// ✅ Max Consecutive Ones
-
-// ✅ Fruits Into Baskets
