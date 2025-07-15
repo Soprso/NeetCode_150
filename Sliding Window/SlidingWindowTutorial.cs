@@ -1,5 +1,6 @@
 using System;
 using System.Globalization;
+using System.Runtime.InteropServices;
 
 namespace NeetCode_150.Sliding_Window;
 // 🪟 What is a Sliding Window?
@@ -82,5 +83,67 @@ public class SlidingWindowTutorial
 
     // ✅ Fruits Into Baskets
 
+    //lets practice:
+    //     Maximum Sum of Subarray of Size K
+    // Problem: Given an array of integers and an integer k, find the maximum sum of any contiguous subarray of size k.
+    public int MaximumSumSubArray(int[] nums, int k)
+    {
+        int maxSum = 0;
+        int windowSum = 0;
+        for (int i = 0; i < k; i++)
+        {
+            windowSum += nums[i];
+        }
+        maxSum = windowSum;
+        for (int i = k; i < nums.Length; i++)  //foreach element we going to the left
+        {
+            windowSum += nums[i] - nums[i - k]; // we are adding to the windowsum the value of that element and since we are working with a fixed window we have to subtract the value of the element from the left, make a notion that window slided to the left by one position
+            maxSum = Math.Max(windowSum, maxSum);
+        }
+        return maxSum;
+    }
+    //first negative number in every window of size k.
+    // Given an array of integers nums and a window size k, return an array of the first negative number in 
+    // each window of size k. If a window contains no negative number, return 0 for that window.
+    // Input:
+    // nums = [12, -1, -7, 8, 15, 30, 16, 28]
+    // k = 3
 
+    // Output:
+    // [-1, -1, -7, 0, 0, 0]
+
+    public int[] FirstNegativeNumber(int[] nums, int k)
+    {
+        List<int> holdNegativeInts = new List<int>();
+        bool isNegative = true;
+        for (int i = 0; i < k; i++)
+        {
+            isNegative = false;
+            if (nums[i] < 0)
+            {
+                holdNegativeInts.Add(nums[i]);
+                isNegative = true;
+                break;
+            }
+        }
+        if (!isNegative)
+        {
+            holdNegativeInts.Add(0);
+        }
+        for (int i = k; i < nums.Length; i++)
+        {
+            isNegative = false;
+            if (nums[i] < 0)
+            {
+                holdNegativeInts.Add(nums[i]);
+                isNegative = true;
+                break;
+            }
+        }
+        if (!isNegative)
+        {
+            holdNegativeInts.Add(0);
+        }
+        return holdNegativeInts.ToArray();
+    }
 }

@@ -124,6 +124,15 @@ class Program
         int totalRainWater = trw.Trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]);
         System.Console.WriteLine(totalRainWater);
 
+        SlidingWindowTutorial swt = new SlidingWindowTutorial();
+        var fnnn = swt.FirstNegativeNumber([12, -1, -7, 8, 15, 30, 16, 28],3);
+        System.Console.WriteLine();
+        System.Console.WriteLine("The first Negative number array is :");
+        foreach (int i in fnnn)
+        {
+            System.Console.WriteLine(i+" ");
+        } 
+
         BestTimeToBuySellStock btbs = new BestTimeToBuySellStock();
         System.Console.WriteLine();
         System.Console.WriteLine("Most Profit is");
