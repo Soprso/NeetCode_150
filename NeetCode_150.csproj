@@ -20,7 +20,6 @@
     <Folder Include="Intervals\" />
     <Folder Include="Linked List\" />
     <Folder Include="Math &amp; Geometry\" />
-    <Folder Include="Stack\" />
     <Folder Include="Trees\" />
     <Folder Include="Tries\" />
   </ItemGroup>
