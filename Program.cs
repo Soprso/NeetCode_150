@@ -1,5 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 using NeetCode_150.Arrays___Hashing;
+using NeetCode_150.Linked_List;
 using NeetCode_150.Sliding_Window;
 using NeetCode_150.Two_Pointers;
 
@@ -7,6 +8,17 @@ class Program
 {
     static void Main()
     {
+
+        ReverseLinkedList rll = new ReverseLinkedList();
+        rll.AddLast(10);
+        rll.AddLast(20);
+        rll.AddLast(30);
+        rll.AddLast(40);
+        rll.AddLast(50);
+
+        rll.PrintList();
+        rll.ReverseList();
+        rll.PrintList();
         ContainsDuplicate cd = new ContainsDuplicate();
         bool containsDupe = cd.hasDuplicate([1, 2, 3, 3, 4]);
         System.Console.WriteLine(containsDupe);
